@@ -2,7 +2,9 @@ package com.torn.scratchcard;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.FrameLayout;
 
 import com.alibaba.weex.plugin.annotation.WeexComponent;
 import com.taobao.weex.WXSDKInstance;
@@ -14,11 +16,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by liuyuanxiao on 2018/5/4.
- * 基于https://github.com/yukunkun/RotateView
+ * 刮刮卡
+ * https://github.com/panpf/scratch-award-view
  */
 @WeexComponent(names = {"tr-scratchcard"})
-public class ScratchcardComponent extends WXComponent<View> {
+public class ScratchcardComponent extends WXComponent<FrameLayout> {
 
     List<Integer> images = new ArrayList<>();
     List<String> names = new ArrayList<>();
@@ -32,8 +34,8 @@ public class ScratchcardComponent extends WXComponent<View> {
     }
 
     @Override
-    protected View initComponentHostView(@NonNull Context context) {
-        View view = new View(context);
+    protected FrameLayout initComponentHostView(@NonNull Context context) {
+        FrameLayout view = (FrameLayout) LayoutInflater.from(context).inflate(R.layout.view_scratch, null);
         return view;
     }
 }
