@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.bmfe.eros-nexus:sdk-1.0.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sdk-1.0.3.aar/4b7c5e3502c966a60d3d0e5ada0e0429/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sdk-1.0.3.aar/4b7c5e3502c966a60d3d0e5ada0e0429/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
