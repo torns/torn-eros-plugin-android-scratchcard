@@ -8,15 +8,17 @@
 
     <TextView
         android:id="@+id/text_main"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="再来一瓶" />
+        android:text="再来一瓶"
+        android:textColor="@color/c_45c4dd"
+        android:textSize="20dp" />
 
-    <me.panpf.scratch.ScratchAwardView
+    <com.torn.scratchcard.lib.ScratchAwardView
         android:id="@+id/rubberView_main"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="center" />
 </FrameLayout>
